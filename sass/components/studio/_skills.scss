@@ -1,0 +1,26 @@
+
+.skills__list {
+    @extend %display_f;
+    justify-content: space-between;
+}
+
+.skills__item {
+    position: relative;
+    z-index: 1;
+}
+
+.skills__text {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    padding: 27px 82px;
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-default;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+}

@@ -1,0 +1,276 @@
+/* Бек дроп и кнопка */
+.backdrop {
+    @extend %display_f;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-property: all;
+}
+
+/* модальное окно */
+
+.modal {
+    position: relative;
+    min-height: 581px;
+    min-width: 528px;
+    background-color: white;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal__button-exit {
+    border: none;
+    color: black;
+    background-color: transparent;
+    transition-duration: 250ms;
+    transition-property: color;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        color: $color-additional;
+    }
+}
+
+.modal__icon-exit {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 5px;
+    width: 1.875rem;
+    height: 1.875rem;
+    fill: currentColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal__title {
+    padding: 20px 40px 0 40px;
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-text;
+}
+
+/* Формы заполнения модального окна */
+.modal__fields {
+    margin: 10px 40px 0 40px;
+    position: relative;
+}
+
+.modal__label {
+    padding-bottom: 0.25rem;
+    display: block;
+    text-align: left;
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.01em;
+    color: $color-text-secondary;
+}
+
+.modal__input {
+    display: block;
+    color: $color-text;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    transition-property: border, -webkit-box-shadow;
+    transition-property: box-shadow, border;
+    transition-property: box-shadow, border, -webkit-box-shadow;
+    transition-duration: 250ms;
+
+    &:focus {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border: 1px solid $color-additional;
+        border-radius: 4px;
+    }
+}
+
+.modal__comments {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+
+    &:focus {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border: 1px solid $color-additional;
+        border-radius: 4px;
+    }
+}
+
+.modal__comments::placeholder {
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+/* Ссылка права пользователя */
+.modal__fields-rights {
+    position: relative;
+    margin: 1.25rem 2.5rem 0 4.75rem;
+}
+
+.modal__rights {
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    color: $color-text-secondary;
+}
+
+.modal__rights-link {
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.03em;
+    color: $color-additional;
+}
+
+.modal__button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    color: $color-default;
+    background: $color-additional;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: background;
+    transition-duration: 250ms;
+    cursor: pointer;
+
+    &:hover {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background: #188CE8;
+    }
+}
+
+/* svg иконки для модального окна */
+/* Имя */
+.modal__box {
+    color: #188CE8;
+}
+
+.modal__people {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 12px;
+    height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+
+    .modal__input:focus+& {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+    }
+}
+
+
+.modal__phone {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 13px;
+    height: 13px;
+    transition-property: fill;
+    transition-duration: 250ms;
+
+    .modal__input:focus+& {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+    }
+}
+
+
+.modal__mail {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 15px;
+    height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+
+    .modal__input:focus+& {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+    }
+}
+
+
+/* Чек бокс */
+.modal__checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    left: -1rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: solid 2px $color-text;
+    border-radius: 2px;
+}
+
+.modal__checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    left: -1rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+    background: $color-additional;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3e%3c/svg%3e");
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+}
+
+.modal__rights-checkbox:checked+.modal__checkbox::after {
+    opacity: 1;
+}

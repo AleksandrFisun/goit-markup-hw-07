@@ -1,0 +1,53 @@
+/* Секция наши достоинства
+
+/* Секция чем мы занимаемся */
+/* Класс для стилизации заголовков 2 уровня */
+.advantage {
+    padding-bottom: 0;
+}
+
+.advantage__list {
+    @extend %display_f;
+}
+
+.advantage__list>li {
+    margin-right: 30px;
+}
+
+.advantage__list>li:last-child {
+    margin-right: 0;
+}
+
+/* Иконки наши достоинства */
+.dignity {
+    @extend %display_dja;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.dignity__icon {
+    width: 70px;
+    height: 70px;
+}
+
+/* Заголовки */
+.dignity__title {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.14rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-text;
+}
+
+.dignity__text {
+    width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

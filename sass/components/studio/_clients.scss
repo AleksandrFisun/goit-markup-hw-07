@@ -1,0 +1,39 @@
+/* Секция наши клиенты */
+.clients {
+    @extend %display_f;
+}
+
+.clients__list{
+    @extend %display_f;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+}
+
+.clients__list+.clients__list {
+    margin-left: 30px;
+}
+
+.clients__link {
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-color: #AFB1B8;
+    cursor: pointer;
+    padding: 12px 30px;
+    color: #afb1b8;
+    transition-duration: 250ms;
+    transition-property: color, border-color;
+    &:hover,
+    &:focus{
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+color: $color-additional;
+border-color: $color-additional;
+    }
+}
+.clients__list-icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+}

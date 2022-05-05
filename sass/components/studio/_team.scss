@@ -1,0 +1,83 @@
+/* Секция наша команда */
+/* Заглавие 3 уровня в ячейках каждого члена команды */
+.section-team {
+    padding-top: 94px;
+    background-color: #f5f4fa;
+}
+
+.team {
+    @extend %display_f;
+    justify-content: space-between;
+}
+
+/* Коробка для заголовка и описания тимы */
+.team__item {
+    width: 270px;
+    background-color: $color-default;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__box {
+    padding-top: 30px;
+}
+
+.team__title {
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    line-height: 1.18rem;
+    letter-spacing: 0.03em;
+    color: $color-text;
+}
+
+/* Описание рода деятельности члена команды */
+.team__text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.18rem;
+    letter-spacing: 0.03em;
+}
+
+/* Список социальных сетей */
+.team-list {
+    @extend %display_f;
+    align-items: center;
+    justify-content: center;
+    color: $color-default;
+    padding: 1rem 32px 30px 32px;
+}
+
+.team-list__item-icon {
+    @extend %display_dja;
+}
+
+.team-list__link-icon {
+    @extend %display_dja;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    transition-property: background-color, border-radius;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color;
+        color: $color-default;
+        background-color: $color-additional;
+    }
+}
+
+
+.team-list__item-icon+.team-list__item-icon {
+    margin-left: 10px;
+}
+
+.team-list__our-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
