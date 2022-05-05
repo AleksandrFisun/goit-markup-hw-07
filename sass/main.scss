@@ -5,6 +5,8 @@
 @import "../sass/utils/variables";
 // Визуальное скрытие
 @import "../sass/utils/headline-hidden";
+// Нормалайз
+@import "../sass/utils/normalize";
 // Контейнер
 @import "./components/container";
 // Хедер
@@ -20,55 +22,3 @@
 
 // Футер
 @import "./components/footer";
-html {
-    box-sizing: border-box;
-}
-
-/* Обнуление стилей */
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-    border: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin: 0;
-    font-family: $font-roboto;
-    color: $color-text-secondary;
-    text-decoration: none;
-}
-
-
-.headline {
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 1.16;
-    margin-bottom: 50px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $color-text;
-}
-
-
-
-
-

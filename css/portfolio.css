@@ -1,20 +1,8 @@
 @charset "UTF-8";
-.advantage__list, .skills__list, .team, .team-list, .clients, .clients__list, .menu__sorting, .projects {
+.menu__sorting, .projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.dignity, .team-list__item-icon, .team-list__link-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* Палитра цветов макета и наборы шрифтов */
@@ -33,6 +21,187 @@
   overflow: hidden;
 }
 
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Обнуление стилей */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  text-decoration: none;
+}
+
 /* Контейнер */
 .container {
   width: 1200px;
@@ -45,6 +214,16 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 /* HEADER */
@@ -261,212 +440,6 @@
   background: #188CE8;
 }
 
-/* Секция наши достоинства
-
-/* Секция чем мы занимаемся */
-/* Класс для стилизации заголовков 2 уровня */
-.advantage {
-  padding-bottom: 0;
-}
-
-.advantage__list > li {
-  margin-right: 30px;
-}
-
-.advantage__list > li:last-child {
-  margin-right: 0;
-}
-
-/* Иконки наши достоинства */
-.dignity {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-color: #F5F4FA;
-}
-
-.dignity__icon {
-  width: 70px;
-  height: 70px;
-}
-
-/* Заголовки */
-.dignity__title {
-  padding-bottom: 10px;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.dignity__text {
-  width: 270px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.skills__list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.skills__item {
-  position: relative;
-  z-index: 1;
-}
-
-.skills__text {
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  padding: 27px 82px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: rgba(47, 48, 58, 0.8);
-  width: 100%;
-}
-
-/* Секция наша команда */
-/* Заглавие 3 уровня в ячейках каждого члена команды */
-.section-team {
-  padding-top: 94px;
-  background-color: #f5f4fa;
-}
-
-.team {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-/* Коробка для заголовка и описания тимы */
-.team__item {
-  width: 270px;
-  background-color: #FFFFFF;
-  text-align: center;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team__box {
-  padding-top: 30px;
-}
-
-.team__title {
-  font-weight: 500;
-  font-size: 1rem;
-  padding-bottom: 10px;
-  line-height: 1.18rem;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-/* Описание рода деятельности члена команды */
-.team__text {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.18rem;
-  letter-spacing: 0.03em;
-}
-
-/* Список социальных сетей */
-.team-list {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #FFFFFF;
-  padding: 1rem 32px 30px 32px;
-}
-
-.team-list__link-icon {
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  color: #AFB1B8;
-  -webkit-transition-property: background-color, border-radius;
-  transition-property: background-color, border-radius;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-}
-
-.team-list__link-icon:hover, .team-list__link-icon:focus {
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  color: #FFFFFF;
-  background-color: #2196f3;
-}
-
-.team-list__item-icon + .team-list__item-icon {
-  margin-left: 10px;
-}
-
-.team-list__our-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-/* Секция наши клиенты */
-.clients__list {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 170px;
-  height: 92px;
-}
-
-.clients__list + .clients__list {
-  margin-left: 30px;
-}
-
-.clients__link {
-  border: 1px solid #AFB1B8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  border-color: #AFB1B8;
-  cursor: pointer;
-  padding: 12px 30px;
-  color: #afb1b8;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: color, border-color;
-  transition-property: color, border-color;
-}
-
-.clients__link:hover, .clients__link:focus {
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #2196f3;
-  border-color: #2196f3;
-}
-
-.clients__list-icon {
-  fill: currentColor;
-  width: 106px;
-  height: 60px;
-}
-
 /*Стили тела страницы портфолио*/
 /* Заголовок нужно визуально скрыть */
 /*Визуальное скрытие, но для читалок остается. */
@@ -526,6 +499,105 @@
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: #2196f3;
+}
+
+/* Проекты */
+.projects-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects-list__img {
+  display: block;
+}
+
+.projects-list__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+.projects-list__item:hover, .projects-list__item:focus {
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.projects-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects-list__item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+/* Текст на ховере */
+.projects-list__box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects-list__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translatey(100%);
+          transform: translatey(100%);
+  -webkit-transition-duration: 450ms;
+          transition-duration: 450ms;
+  padding: 4rem 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  opacity: 0;
+}
+
+.projects-list__item:hover .projects-list__description {
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+}
+
+/* Ссылка на проект */
+.projects-list__link {
+  text-decoration: none;
+}
+
+/* Заголовок и описание */
+.projects-list__about {
+  background: #FFFFFF;
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.25rem 1.5rem;
+}
+
+/* Заголовок проекта */
+.projects-list__title {
+  padding-bottom: 0.25rem;
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+/* Описание проектов */
+.projects-list__service {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 /* Оформление футера */
@@ -705,158 +777,5 @@
   height: 24px;
   margin-left: 10px;
   fill: currentColor;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Обнуление стилей */
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  border: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  color: #757575;
-  text-decoration: none;
-}
-
-.headline {
-  font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 1.16;
-  margin-bottom: 50px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-/* Проекты */
-.projects {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.projects-img {
-  display: block;
-}
-
-.list-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-}
-
-.list-item:hover, .list-item:focus {
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.list-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.list-item:nth-child(n + 7) {
-  margin-bottom: 0;
-}
-
-/* Текст на ховере */
-.projects-box {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.about-project-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transform: translatey(100%);
-          transform: translatey(100%);
-  -webkit-transition-duration: 450ms;
-          transition-duration: 450ms;
-  padding: 4rem 1.5rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.75rem;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  opacity: 0;
-}
-
-.list-item:hover .about-project-description {
-  background-color: rgba(33, 150, 243, 0.9);
-  opacity: 1;
-  -webkit-transform: translatey(0);
-          transform: translatey(0);
-}
-
-/* Ссылка на проект */
-.projects-link {
-  text-decoration: none;
-}
-
-/* Заголовок и описание */
-.about-project {
-  background: #FFFFFF;
-  border: 1px solid #eeeeee;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1.25rem 1.5rem;
-}
-
-/* Заголовок проекта */
-.projects-title {
-  padding-bottom: 0.25rem;
-  font-size: 1.1rem;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-/* Описание проектов */
-.projects-description {
-  font-family: "Roboto", sans-serif;
-  color: #757575;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-
-.svg-style {
-  width: 1rem;
-  height: 0.75rem;
 }
 /*# sourceMappingURL=portfolio.css.map */

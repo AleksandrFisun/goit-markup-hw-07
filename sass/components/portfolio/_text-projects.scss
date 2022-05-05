@@ -1,0 +1,64 @@
+/* Текст на ховере */
+.projects-list__box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects-list__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translatey(100%);
+    transition-duration: 450ms;
+    padding: 4rem 1.5rem;
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03em;
+    color: $color-default;
+    opacity: 0;
+
+    .projects-list__item:hover & {
+        background-color: rgba(33, 150, 243, 0.9);
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+
+/* Ссылка на проект */
+.projects-list__link {
+    text-decoration: none;
+}
+
+/* Заголовок и описание */
+.projects-list__about {
+    background: $color-default;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    padding: 1.25rem 1.5rem;
+}
+
+/* Заголовок проекта */
+.projects-list__title {
+    padding-bottom: 0.25rem;
+    font-size: 1.1rem;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $color-text;
+}
+
+/* Описание проектов */
+.projects-list__service {
+    font-family: $font-roboto;
+    color: $color-text-secondary;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
