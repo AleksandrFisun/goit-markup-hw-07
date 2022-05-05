@@ -1,0 +1,39 @@
+/* Меню сортировки поиска работ компании */
+.button-sorting {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+}
+
+.button-sorting>.list {
+    margin-right: 8px;
+}
+
+.button-sorting>.list:last-child {
+    margin-right: 0;
+}
+
+.sorting-works {
+    padding: 0.375rem 1.375rem;
+    border-radius: 4px;
+    border: #f5f4fa;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-text;
+    transition-duration: 250ms;
+    transition-property: all;
+}
+
+.sorting-works:hover,
+.sorting-works:focus {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $color-default;
+    background-color: $color-additional;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: $color-additional;
+}

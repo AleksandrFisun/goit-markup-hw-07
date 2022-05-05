@@ -1,0 +1,41 @@
+/* Секция чем мы занимаемся */
+/* Класс для стилизации заголовков 2 уровня */
+.section-skills {
+    padding-bottom: 0;
+}
+
+.list-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-features-item {
+    position: relative;
+    z-index: 1;
+}
+
+.list-features-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.6875rem 5.125rem;
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-default;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.16;
+    margin-bottom: 3.125rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-text;
+}

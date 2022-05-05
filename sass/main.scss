@@ -1,0 +1,41 @@
+// Обнуление стилей
+@import "../sass/utils/normalaize";
+// Переменные
+@import "../sass/utils/variables";
+// Визуальное скрытие
+@import "../sass/utils/headline-hidden";
+// Контейнер
+@import "../sass/components/container";
+// Хедер
+@import "../sass/components/header";
+// Секции
+@import "../sass/components/section-promo";
+@import "../sass/components/section-dignity";
+@import "../sass/components/section-skills";
+@import "../sass/components/section-team";
+@import "../sass/components/section-clients";
+// Футер
+@import "../sass/components/footer";
+// Модальное окно
+@import "../sass/components/modal";
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-roboto;
+  color: $color-text-secondary;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
