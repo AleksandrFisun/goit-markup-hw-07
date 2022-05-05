@@ -1,41 +1,23 @@
 // Обнуление стилей
 @import "../sass/utils/normalaize";
 // Переменные
-@import "../sass/utils/variables";
+@import "../sass/utils/_variables";
 // Визуальное скрытие
-@import "../sass/utils/headline-hidden";
+@import "../sass/utils/_headline-hidden";
 // Контейнер
-@import "../sass/components/container";
+@import "../sass/components/_container";
+// Боди
+@import "../sass/components/_body";
 // Хедер
-@import "../sass/components/header";
+@import "../sass/components/_header";
 // Секции
-@import "../sass/components/section-promo";
-@import "../sass/components/section-dignity";
-@import "../sass/components/section-skills";
-@import "../sass/components/section-team";
-@import "../sass/components/section-clients";
+@import "../sass/components/_section-promo";
+@import "../sass/components/_section-dignity";
+@import "../sass/components/_section-skills";
+@import "../sass/components/_section-team";
+@import "../sass/components/_section-clients";
 // Футер
-@import "../sass/components/footer";
+@import "../sass/components/_footer";
 // Модальное окно
-@import "../sass/components/modal";
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: $font-roboto;
-  color: $color-text-secondary;
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
+@import "../sass/components/_modal";
 
