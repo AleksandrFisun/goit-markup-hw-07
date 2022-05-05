@@ -1,0 +1,153 @@
+/* Оформление футера */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+.footer__section {
+    display: flex;
+}
+
+.footer__logo,
+.footer__logo:focus {
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $color-default;
+    text-decoration: none;
+}
+
+.footer__logo-blue {
+    color: $color-additional;
+}
+
+.footer-list {
+    margin-top: 20px;
+}
+
+.footer-list__item {
+    padding-bottom: 9px;
+}
+
+.footer-list__item:last-child {
+    padding-bottom: 0;
+}
+
+.location-address,
+.location-address:focus {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $color-default;
+    text-decoration: none;
+}
+
+.footer-list__connection,
+.footer-list__connection:focus {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list__connection:last-child {
+    margin-bottom: 0;
+}
+
+/* Заголовок соц сетей в футере */
+.title-join {
+    margin-bottom: 20px;
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $color-default;
+}
+
+/* Список социальных сетей */
+.footer-social {
+    margin-left: 70px;
+}
+
+.footer-social__media {
+    display: flex;
+}
+
+.footer-social__link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+.footer-social__list+.footer-social__list {
+    margin-left: 10px;
+}
+
+.footer-social__list>.footer-social__link:hover,
+.footer-social__list>.footer-social__link:focus {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $color-additional;
+}
+
+.footer-social__icon {
+    fill: $color-default;
+    width: 20px;
+    height: 20px;
+}
+
+/* Футер (подписаться) */
+.footer__subscribe {
+    margin-left: 93px;
+}
+
+.footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding: 1rem 1rem;
+    background: #2F303A;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $color-default;
+}
+
+.footer-form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.75rem;
+    cursor: pointer;
+}
+
+.footer-form__icon-airplane {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
+}
