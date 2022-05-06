@@ -1,14 +1,14 @@
 /* Тело страницы студия */
 /* Секция промо (Продвижение, реклама) */
 
-.promo {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/baner.jpg);
+.bonnet{
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bonnet.jpg);
     background-color: rgba(47, 48, 58, 0.4);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.promo-section {
+.bonnet-section {
     background-color: #2f303a;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -16,7 +16,7 @@
 }
 
 /* Заголовок секции */
-.promo__title {
+.bonnet__title {
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -28,7 +28,7 @@
 }
 
 /* Кнопка заказа */
-.promo__order {
+.bonnet__order {
     padding: 10px 32px;
     font-weight: 700;
     font-size: 1rem;
@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 
-.promo__order:focus {
+.bonnet__order:focus {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background: #188CE8;
 }
